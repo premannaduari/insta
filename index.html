@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Instagram</title>
+    <link rel="icon" href="download 2.jpg" />
+    <style>
+        /* body formatting */
+        body{
+            margin: 0px;
+            background-color: rgb(243, 243, 243);
+        }
+        /* nav bar css */
+        .navbar{
+            background-color: #ffffff;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            position: sticky;
+            top: 0px;
+            left: 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            align-items: center;
+            border-bottom: 2px solid gray;
+            z-index: 1;
+            margin-bottom: 5px;
+        }
+        /* icons spacing in nav bar */
+        .material-icons{
+            margin-right: 5px;
+        }
+        /* input box in nav bar  */
+        .searchbar input{
+            border: 1px solid grey;
+            background-color: rgb(245, 245, 245);
+            outline: none;
+            padding: 5px 10px;
+        }
+        /* content div */
+        .post-content{
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            margin-left: 20%;
+            margin-bottom: 20px;
+            border: 2px solid #dfdfdf;
+            width: 605px;
+            padding: 10px 0px;
+        }
+        /* Username div in post */
+        .username-img{
+            height:40px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        /* user image formatting */
+        .username-img img{
+            margin-right: 5px;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+        }
+        /* post div formatting */
+        .post{
+            height: auto;
+            width: 500px;
+        }
+        /* posted image div formatting */
+        .post img{
+            height: 600px;
+            width: 600px;
+        }
+        /* action icon styling */
+        .action-icon{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        /* user caption to align everything after image */
+        .user-caption{
+           display: flex;
+           flex-direction: column;
+       }
+       /* time stamp formatting */
+       .timestamp{
+           margin:15px;
+           color: grey;
+           font-size: medium;
+       }
+       /* formatting comment section */
+       .comments{
+           padding: 10px;
+           background-color: #ffffff;
+           border: 2px solid #ffffff;
+           border-radius: 999px;
+           display: flex;
+           flex-direction: row;
+       }
+       /* comment boc formatting */
+       .comments input{
+           border: 0px;
+           outline: none;
+           display: flex;
+           flex: 1;
+       }
+       /* Comment post button */
+       .comments span{
+           font-weight: bold;
+           color: royalblue;
+       }
+    </style>
+</head>
+<body>
+    <!-- nav bar division -->
+    <div class='navbar'>
+    <!-- insta logo -->
+        <div class="brand">
+            <img src="download 2.jpg">
+        </div>
+    <!-- search bar -->
+        <div class="searchbar">
+            <input type="text" placeholder="Search">
+        </div>
+    <!-- icons -->
+        <div class="icons">
+            <!-- home icon -->
+            <span class="material-icons">
+                home
+            </span>
+            <!-- message icon -->
+            <span class="material-icons">
+                chat
+            </span>
+            <!-- post icon -->
+            <span class="material-icons">
+                add_box
+            </span>
+            <!-- Explore icon -->
+            <span class="material-icons">
+                explore
+            </span>
+            <!-- likes icon -->
+            <span class="material-icons">
+                favorite_border
+            </span>
+        </div>
+    </div>
+    <div class="post-content">
+        <div class="username-img">
+            <img src="download 2.jpg" />
+            <h4>prem</h4>
+        </div>
+        <div class="post">
+            <img src="download 2.jpg" />
+        </div>
+        <!-- Post actions -->
+        <div class="action-icon">
+            <!-- division for primary type of icons -->
+            <div class='primary-action'>
+                <!-- like icon -->
+                <span class="material-icons">
+                    favorite_border
+                </span>
+                <!-- comment icon -->
+                <span class="material-icons">
+                    chat_bubble_outline
+                </span>
+                <!-- share icon -->
+                <span class="material-icons">
+                    send
+                </span>
+            </div>
+            <!-- div to create space between three type of icon -->
+            <div class="switch-img">
+                <!-- switch icon -->
+                <span class="material-icons">
+                    radio_button_unchecked
+                </span>
+                <span class="material-icons">
+                    radio_button_checked
+                </span>
+            </div>
+            <!-- Div for save post icon -->
+            <div class="save-img">
+                <span class="material-icons">
+                    bookmark_border
+                </span>
+            </div>
+        </div>
+        <!-- div for username and caption -->
+        <div class="user-caption">
+            <!-- username and userimage for caption -->
+            <div class="username-img">
+                <img src="download 2.jpg" />
+                <h4>prem</h4>
+                <p>
+                    high low vloume blah bhah lah bhah
+                    lah bhah                </p>
+            </div>
+            <!-- timestamp  -->
+            <div class="timestamp">
+                <span>10 minutes ago</span>
+            </div>
+            <!-- adding a commnet box  -->
+            <div class="comments">
+                <span class="material-icons">
+                    emoji_emotions
+                </span>
+                <input type="text" placeholder="Add a comment..">
+                <span>POST</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
